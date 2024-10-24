@@ -12,7 +12,7 @@ searchButton.addEventListener('click', () => {
 
 async function fetchWeatherData(city) {
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`);
+        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=2075a3fef86b405c99465912241310&q=Chibombo&aqi=no}`);
         const data = await response.json();
         if (data.cod === '404') {
             alert('City not found');
@@ -59,7 +59,7 @@ if (navigator.geolocation) {
 }
 
 async function fetchWeatherDataByCoords(lat, lon) {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`);
+    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=2075a3fef86b405c99465912241310&q=Chibombo&aqi=no`);
     const data = await response.json();
     displayWeatherData(data);
 }
