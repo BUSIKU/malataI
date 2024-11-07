@@ -191,6 +191,25 @@ body{
         overflow-x: scroll;
     }
 }
+/* Ensure the body and html fill the screen height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container that holds all content except the footer */
+.container, .future-forecast {
+    flex: 1;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
 
 
 /* Footer styling */
