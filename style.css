@@ -212,33 +212,4 @@ footer {
 }
 
 
-/* Footer styling */
-footer {
-    background-color: green;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    position: relative; /* Ensures it doesn't overlap */
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer p {
-    margin-top: 10px;
-}
 
